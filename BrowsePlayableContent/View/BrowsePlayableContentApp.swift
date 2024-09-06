@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct BrowsePlayableContentApp: App {
+    
+    @StateObject private var coordinator = AppCoordinator()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            coordinator.currentView
         }
     }
 }

@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5C38E87B2C89FC95007DF383 /* BrowsePlayableContentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E87A2C89FC95007DF383 /* BrowsePlayableContentApp.swift */; };
-		5C38E87D2C89FC95007DF383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E87C2C89FC95007DF383 /* ContentView.swift */; };
 		5C38E87F2C89FC96007DF383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C38E87E2C89FC96007DF383 /* Assets.xcassets */; };
 		5C38E8822C89FC96007DF383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C38E8812C89FC96007DF383 /* Preview Assets.xcassets */; };
 		5C38E88C2C89FC97007DF383 /* BrowsePlayableContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E88B2C89FC97007DF383 /* BrowsePlayableContentTests.swift */; };
 		5C38E8962C89FC97007DF383 /* BrowsePlayableContentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8952C89FC97007DF383 /* BrowsePlayableContentUITests.swift */; };
 		5C38E8982C89FC97007DF383 /* BrowsePlayableContentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8972C89FC97007DF383 /* BrowsePlayableContentUITestsLaunchTests.swift */; };
+		5C38E8A92C89FE83007DF383 /* RadioMediaServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8A82C89FE83007DF383 /* RadioMediaServices.swift */; };
+		5C38E8AD2C8B6D96007DF383 /* PlayableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8AC2C8B6D96007DF383 /* PlayableItem.swift */; };
+		5C38E8AF2C8B6E75007DF383 /* CachedPlayableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8AE2C8B6E75007DF383 /* CachedPlayableItem.swift */; };
+		5C38E8B12C8B7065007DF383 /* StationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8B02C8B7065007DF383 /* StationsViewModel.swift */; };
+		5C38E8B32C8B75B6007DF383 /* StationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8B22C8B75B6007DF383 /* StationsView.swift */; };
+		5C38E8B62C8B7CD0007DF383 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8B52C8B7CD0007DF383 /* AppCoordinator.swift */; };
+		5C38E8B92C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8B72C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld */; };
+		5C38E8BB2C8B7F41007DF383 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8BA2C8B7F41007DF383 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		5C38E8772C89FC95007DF383 /* BrowsePlayableContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowsePlayableContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C38E87A2C89FC95007DF383 /* BrowsePlayableContentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePlayableContentApp.swift; sourceTree = "<group>"; };
-		5C38E87C2C89FC95007DF383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C38E87E2C89FC96007DF383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C38E8812C89FC96007DF383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C38E8872C89FC97007DF383 /* BrowsePlayableContentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowsePlayableContentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +50,14 @@
 		5C38E8912C89FC97007DF383 /* BrowsePlayableContentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowsePlayableContentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C38E8952C89FC97007DF383 /* BrowsePlayableContentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePlayableContentUITests.swift; sourceTree = "<group>"; };
 		5C38E8972C89FC97007DF383 /* BrowsePlayableContentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePlayableContentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C38E8A82C89FE83007DF383 /* RadioMediaServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMediaServices.swift; sourceTree = "<group>"; };
+		5C38E8AC2C8B6D96007DF383 /* PlayableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayableItem.swift; sourceTree = "<group>"; };
+		5C38E8AE2C8B6E75007DF383 /* CachedPlayableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPlayableItem.swift; sourceTree = "<group>"; };
+		5C38E8B02C8B7065007DF383 /* StationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModel.swift; sourceTree = "<group>"; };
+		5C38E8B22C8B75B6007DF383 /* StationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsView.swift; sourceTree = "<group>"; };
+		5C38E8B52C8B7CD0007DF383 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5C38E8B82C8B7E31007DF383 /* PlayableContentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayableContentModel.xcdatamodel; sourceTree = "<group>"; };
+		5C38E8BA2C8B7F41007DF383 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 		5C38E86E2C89FC95007DF383 = {
 			isa = PBXGroup;
 			children = (
+				5C38E8B72C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld */,
 				5C38E8792C89FC95007DF383 /* BrowsePlayableContent */,
 				5C38E88A2C89FC97007DF383 /* BrowsePlayableContentTests */,
 				5C38E8942C89FC97007DF383 /* BrowsePlayableContentUITests */,
@@ -94,8 +109,10 @@
 		5C38E8792C89FC95007DF383 /* BrowsePlayableContent */ = {
 			isa = PBXGroup;
 			children = (
-				5C38E87A2C89FC95007DF383 /* BrowsePlayableContentApp.swift */,
-				5C38E87C2C89FC95007DF383 /* ContentView.swift */,
+				5C38E8A72C89FCC7007DF383 /* View */,
+				5C38E8A62C89FCB9007DF383 /* Repository */,
+				5C38E8A52C89FCB2007DF383 /* ViewModel */,
+				5C38E8A42C89FCAC007DF383 /* Model */,
 				5C38E87E2C89FC96007DF383 /* Assets.xcassets */,
 				5C38E8802C89FC96007DF383 /* Preview Content */,
 			);
@@ -125,6 +142,50 @@
 				5C38E8972C89FC97007DF383 /* BrowsePlayableContentUITestsLaunchTests.swift */,
 			);
 			path = BrowsePlayableContentUITests;
+			sourceTree = "<group>";
+		};
+		5C38E8A42C89FCAC007DF383 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C38E8A82C89FE83007DF383 /* RadioMediaServices.swift */,
+				5C38E8AC2C8B6D96007DF383 /* PlayableItem.swift */,
+				5C38E8AE2C8B6E75007DF383 /* CachedPlayableItem.swift */,
+				5C38E8BA2C8B7F41007DF383 /* CoreDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C38E8A52C89FCB2007DF383 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5C38E8B02C8B7065007DF383 /* StationsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5C38E8A62C89FCB9007DF383 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5C38E8A72C89FCC7007DF383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C38E8B42C8B7CB7007DF383 /* Coordinator */,
+				5C38E87A2C89FC95007DF383 /* BrowsePlayableContentApp.swift */,
+				5C38E8B22C8B75B6007DF383 /* StationsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C38E8B42C8B7CB7007DF383 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5C38E8B52C8B7CD0007DF383 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C38E87D2C89FC95007DF383 /* ContentView.swift in Sources */,
+				5C38E8AF2C8B6E75007DF383 /* CachedPlayableItem.swift in Sources */,
+				5C38E8A92C89FE83007DF383 /* RadioMediaServices.swift in Sources */,
+				5C38E8B32C8B75B6007DF383 /* StationsView.swift in Sources */,
+				5C38E8B62C8B7CD0007DF383 /* AppCoordinator.swift in Sources */,
+				5C38E8B12C8B7065007DF383 /* StationsViewModel.swift in Sources */,
+				5C38E8AD2C8B6D96007DF383 /* PlayableItem.swift in Sources */,
+				5C38E8B92C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld in Sources */,
+				5C38E8BB2C8B7F41007DF383 /* CoreDataManager.swift in Sources */,
 				5C38E87B2C89FC95007DF383 /* BrowsePlayableContentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +656,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5C38E8B72C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5C38E8B82C8B7E31007DF383 /* PlayableContentModel.xcdatamodel */,
+			);
+			currentVersion = 5C38E8B82C8B7E31007DF383 /* PlayableContentModel.xcdatamodel */;
+			name = PlayableContentModel.xcdatamodeld;
+			path = /Users/dukuzy01/Documents/BrowsePlayableContent/PlayableContentModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5C38E86F2C89FC95007DF383 /* Project object */;
 }
