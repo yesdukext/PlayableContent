@@ -13,14 +13,16 @@
 		5C38E88C2C89FC97007DF383 /* BrowsePlayableContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E88B2C89FC97007DF383 /* BrowsePlayableContentTests.swift */; };
 		5C38E8962C89FC97007DF383 /* BrowsePlayableContentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8952C89FC97007DF383 /* BrowsePlayableContentUITests.swift */; };
 		5C38E8982C89FC97007DF383 /* BrowsePlayableContentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8972C89FC97007DF383 /* BrowsePlayableContentUITestsLaunchTests.swift */; };
-		5C38E8A92C89FE83007DF383 /* RadioMediaServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8A82C89FE83007DF383 /* RadioMediaServices.swift */; };
-		5C38E8AD2C8B6D96007DF383 /* PlayableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8AC2C8B6D96007DF383 /* PlayableItem.swift */; };
-		5C38E8AF2C8B6E75007DF383 /* CachedPlayableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8AE2C8B6E75007DF383 /* CachedPlayableItem.swift */; };
+		5C38E8A92C89FE83007DF383 /* RadioMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8A82C89FE83007DF383 /* RadioMedia.swift */; };
 		5C38E8B12C8B7065007DF383 /* StationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8B02C8B7065007DF383 /* StationsViewModel.swift */; };
 		5C38E8B32C8B75B6007DF383 /* StationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8B22C8B75B6007DF383 /* StationsView.swift */; };
 		5C38E8B62C8B7CD0007DF383 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8B52C8B7CD0007DF383 /* AppCoordinator.swift */; };
-		5C38E8B92C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8B72C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld */; };
-		5C38E8BB2C8B7F41007DF383 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8BA2C8B7F41007DF383 /* CoreDataManager.swift */; };
+		5C38E8BE2C8B9274007DF383 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8BD2C8B9274007DF383 /* NetworkService.swift */; };
+		5C38E8C02C8B9411007DF383 /* StationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8BF2C8B9411007DF383 /* StationRepository.swift */; };
+		5C38E8C22C8B9F03007DF383 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8C12C8B9F03007DF383 /* Coordinator.swift */; };
+		5C38E8C72C8C5840007DF383 /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8C62C8C5840007DF383 /* CachedAsyncImage.swift */; };
+		5C38E8C92C8C67C1007DF383 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8C82C8C67C1007DF383 /* ErrorView.swift */; };
+		5C38E8CB2C8C6A80007DF383 /* IdentifiableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38E8CA2C8C6A80007DF383 /* IdentifiableError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +52,16 @@
 		5C38E8912C89FC97007DF383 /* BrowsePlayableContentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowsePlayableContentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C38E8952C89FC97007DF383 /* BrowsePlayableContentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePlayableContentUITests.swift; sourceTree = "<group>"; };
 		5C38E8972C89FC97007DF383 /* BrowsePlayableContentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePlayableContentUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5C38E8A82C89FE83007DF383 /* RadioMediaServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMediaServices.swift; sourceTree = "<group>"; };
-		5C38E8AC2C8B6D96007DF383 /* PlayableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayableItem.swift; sourceTree = "<group>"; };
-		5C38E8AE2C8B6E75007DF383 /* CachedPlayableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPlayableItem.swift; sourceTree = "<group>"; };
+		5C38E8A82C89FE83007DF383 /* RadioMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMedia.swift; sourceTree = "<group>"; };
 		5C38E8B02C8B7065007DF383 /* StationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsViewModel.swift; sourceTree = "<group>"; };
 		5C38E8B22C8B75B6007DF383 /* StationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsView.swift; sourceTree = "<group>"; };
 		5C38E8B52C8B7CD0007DF383 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		5C38E8B82C8B7E31007DF383 /* PlayableContentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayableContentModel.xcdatamodel; sourceTree = "<group>"; };
-		5C38E8BA2C8B7F41007DF383 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5C38E8BD2C8B9274007DF383 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5C38E8BF2C8B9411007DF383 /* StationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRepository.swift; sourceTree = "<group>"; };
+		5C38E8C12C8B9F03007DF383 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5C38E8C62C8C5840007DF383 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
+		5C38E8C82C8C67C1007DF383 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		5C38E8CA2C8C6A80007DF383 /* IdentifiableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,6 @@
 		5C38E86E2C89FC95007DF383 = {
 			isa = PBXGroup;
 			children = (
-				5C38E8B72C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld */,
 				5C38E8792C89FC95007DF383 /* BrowsePlayableContent */,
 				5C38E88A2C89FC97007DF383 /* BrowsePlayableContentTests */,
 				5C38E8942C89FC97007DF383 /* BrowsePlayableContentUITests */,
@@ -109,6 +112,7 @@
 		5C38E8792C89FC95007DF383 /* BrowsePlayableContent */ = {
 			isa = PBXGroup;
 			children = (
+				5C38E8BC2C8B9257007DF383 /* Network */,
 				5C38E8A72C89FCC7007DF383 /* View */,
 				5C38E8A62C89FCB9007DF383 /* Repository */,
 				5C38E8A52C89FCB2007DF383 /* ViewModel */,
@@ -147,10 +151,7 @@
 		5C38E8A42C89FCAC007DF383 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5C38E8A82C89FE83007DF383 /* RadioMediaServices.swift */,
-				5C38E8AC2C8B6D96007DF383 /* PlayableItem.swift */,
-				5C38E8AE2C8B6E75007DF383 /* CachedPlayableItem.swift */,
-				5C38E8BA2C8B7F41007DF383 /* CoreDataManager.swift */,
+				5C38E8A82C89FE83007DF383 /* RadioMedia.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				5C38E8B02C8B7065007DF383 /* StationsViewModel.swift */,
+				5C38E8CA2C8C6A80007DF383 /* IdentifiableError.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -166,6 +168,7 @@
 		5C38E8A62C89FCB9007DF383 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				5C38E8BF2C8B9411007DF383 /* StationRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -173,9 +176,11 @@
 		5C38E8A72C89FCC7007DF383 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5C38E8C52C8C5829007DF383 /* ImageView */,
 				5C38E8B42C8B7CB7007DF383 /* Coordinator */,
 				5C38E87A2C89FC95007DF383 /* BrowsePlayableContentApp.swift */,
 				5C38E8B22C8B75B6007DF383 /* StationsView.swift */,
+				5C38E8C82C8C67C1007DF383 /* ErrorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,8 +189,25 @@
 			isa = PBXGroup;
 			children = (
 				5C38E8B52C8B7CD0007DF383 /* AppCoordinator.swift */,
+				5C38E8C12C8B9F03007DF383 /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		5C38E8BC2C8B9257007DF383 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5C38E8BD2C8B9274007DF383 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5C38E8C52C8C5829007DF383 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				5C38E8C62C8C5840007DF383 /* CachedAsyncImage.swift */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,14 +340,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C38E8AF2C8B6E75007DF383 /* CachedPlayableItem.swift in Sources */,
-				5C38E8A92C89FE83007DF383 /* RadioMediaServices.swift in Sources */,
+				5C38E8BE2C8B9274007DF383 /* NetworkService.swift in Sources */,
+				5C38E8A92C89FE83007DF383 /* RadioMedia.swift in Sources */,
+				5C38E8C22C8B9F03007DF383 /* Coordinator.swift in Sources */,
+				5C38E8C02C8B9411007DF383 /* StationRepository.swift in Sources */,
 				5C38E8B32C8B75B6007DF383 /* StationsView.swift in Sources */,
+				5C38E8CB2C8C6A80007DF383 /* IdentifiableError.swift in Sources */,
+				5C38E8C92C8C67C1007DF383 /* ErrorView.swift in Sources */,
 				5C38E8B62C8B7CD0007DF383 /* AppCoordinator.swift in Sources */,
 				5C38E8B12C8B7065007DF383 /* StationsViewModel.swift in Sources */,
-				5C38E8AD2C8B6D96007DF383 /* PlayableItem.swift in Sources */,
-				5C38E8B92C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld in Sources */,
-				5C38E8BB2C8B7F41007DF383 /* CoreDataManager.swift in Sources */,
+				5C38E8C72C8C5840007DF383 /* CachedAsyncImage.swift in Sources */,
 				5C38E87B2C89FC95007DF383 /* BrowsePlayableContentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,20 +680,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5C38E8B72C8B7E31007DF383 /* PlayableContentModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5C38E8B82C8B7E31007DF383 /* PlayableContentModel.xcdatamodel */,
-			);
-			currentVersion = 5C38E8B82C8B7E31007DF383 /* PlayableContentModel.xcdatamodel */;
-			name = PlayableContentModel.xcdatamodeld;
-			path = /Users/dukuzy01/Documents/BrowsePlayableContent/PlayableContentModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5C38E86F2C89FC95007DF383 /* Project object */;
 }

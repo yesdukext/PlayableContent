@@ -1,7 +1,4 @@
-//
-//  AppCoordinator.swift
-//  BrowsePlayableContent
-//
+
 //  Created by Yves Dukuze on 06/09/2024.
 //
 
@@ -9,9 +6,15 @@ import SwiftUI
 
 class AppCoordinator: ObservableObject {
     
-    @Published var currentView: AnyView = AnyView(StationsView())
+    private let apiService: NetworkService
     
-    func start() {
-        currentView = AnyView(StationsView())
+    init(apiService: NetworkService){
+        self.apiService = apiService
+    }
+    
+    func start() -> some View {
+        let repository = StationRepImpl(networkService: apiService)
+        let viewModel = StationsViewModel(repository: repository)
+        return StationsView(viewModel: viewModel)
     }
 }
