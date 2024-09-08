@@ -2,11 +2,6 @@
 //  Created by Yves Dukuze on 06/09/2024.
 //
 
-
-
-
-
-
 import SwiftUI
 import Combine
 
@@ -17,7 +12,7 @@ struct StationsView: View {
         NavigationView {
             List(viewModel.stations, id: \.id) { station in
                 HStack {
-                    CachedAsyncImage(url: URL(string: station.imageURL))
+                    CachedAsyncImage(url: URL(string: station.))
                     
                     VStack(alignment: .leading) {
                         Text(station.titles.primary)

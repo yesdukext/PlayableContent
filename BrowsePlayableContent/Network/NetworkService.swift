@@ -10,14 +10,12 @@ protocol NetworkServiceProtocol {
 }
 
 class NetworkService: NetworkServiceProtocol {
-    
-    private let baseURL = URL(string: "https://rms.api.bbc.co.uk/v2/experience/inline/stations")!
-    
     func fetchStations() -> AnyPublisher<RMSResponse, Error> {
-        URLSession.shared.dataTaskPublisher(for: baseURL)
+        let url = URL(string: "https://rms.api.bbc.co.uk/v2/experience/inline/stations")!
+        
+        return URLSession.shared.dataTaskPublisher(for: url)
             .map(\.data)
             .decode(type: RMSResponse.self, decoder: JSONDecoder())
-            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 }

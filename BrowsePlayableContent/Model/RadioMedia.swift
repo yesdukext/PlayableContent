@@ -34,28 +34,29 @@ enum DecodableType: Decodable {
 }
 
 struct RMSResponse: Decodable {
-    let modules: [Module]
-    let imageURL: DecodableType
+    let data: [Module]
     
     enum codingKeys: String, CodingKey {
-        case modules = "modules"
-        case imageURL = "image_url"
+        case data
+//        case imageURL = "image_url"
     }
 }
 
 struct Module: Decodable {
     let type: String
+    let id: String
     let title: String
-    let displayables: [RMSData]
+    let data: [PlayableItem]
     
     enum codingKeys: String, CodingKey {
         case type
+        case id
         case title
-        case displayables = "displayables"
+        case data
     }
 }
 
-struct RMSData: Decodable {
+struct PlayableItem: Decodable {
     let type: TypeEnum
     let id, urn: String
     let network: Network
@@ -65,7 +66,6 @@ struct RMSData: Decodable {
     let duration, progress: Duration
     let container, download: DecodableType?
     let availability: Availability
-    let release: Release
     let guidance: DecodableType?
     let activities, uris: [DecodableType]
     let playContext, recommendation: DecodableType?
@@ -73,7 +73,7 @@ struct RMSData: Decodable {
     enum CodingKeys: String, CodingKey {
         case type, id, urn, network, titles, synopses
         case imageURL = "image_url"
-        case duration, progress, container, download, availability, release, guidance, activities, uris
+        case duration, progress, container, download, availability, guidance, activities, uris
         case playContext = "play_context"
         case recommendation
     }
@@ -112,11 +112,10 @@ struct Synopses: Codable {
 
 struct Titles: Codable {
     let primary, secondary: String
-    let tertiary: Tertiary
     let entityTitle: String
 
     enum CodingKeys: String, CodingKey {
-        case primary, secondary, tertiary
+        case primary, secondary
         case entityTitle = "entity_title"
     }
 }
@@ -127,11 +126,6 @@ enum Tertiary: String, Codable {
 
 enum TypeEnum: String, Codable {
     case playableItem = "playable_item"
-}
-
-struct Release: Codable {
-    let date: Date?
-    let label: ReleaseLabel?
 }
 
 enum ReleaseLabel: String, Codable {
