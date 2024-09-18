@@ -77,6 +77,10 @@ struct PlayableItem: Decodable {
         case playContext = "play_context"
         case recommendation
     }
+    
+    var formattedImageURL: String {
+        return imageURL.replacingOccurrences(of: "{recipe}", with: "256x256")
+    }
 }
 
 struct Availability: Decodable {

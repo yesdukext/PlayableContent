@@ -24,7 +24,9 @@ struct CachedAsyncImage: View {
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: 100, maxHeight: 100)
-                    .accessibility(hidden: true)
+//                    .accessibility(hidden: true)
+                    .accessibilityLabel("Content Image")
+                    .accessibilityHint("Shows the image of a playable content")
             } else if loading {
                 ProgressView()
                     .frame(maxWidth: 100, maxHeight: 100)

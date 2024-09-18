@@ -24,11 +24,9 @@ final class StationsViewModel: ObservableObject {
             .sink(receiveCompletion: { [weak self] completion in
                 if case let .failure(error) = completion {
                     self?.error = IdentifiableError(nsError: error as NSError)
-                    print("=======================> Error : \(error)")
                 }
             }, receiveValue: {[weak self] stations in
                 self?.stations = stations
-                print("=======================> Response : \(stations)")
             })
             .store(in: &cancellable)
     }
