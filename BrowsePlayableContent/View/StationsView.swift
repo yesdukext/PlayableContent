@@ -11,20 +11,21 @@ struct StationsView: View {
     var body: some View {
         NavigationView {
             List(viewModel.stations, id: \.id) { station in
-                HStack {
-//                    CachedAsyncImage(url: URL(string: station.imageURL))
-                    CachedAsyncImage(url: URL(string: station.formattedImageURL))
-                    
-                    VStack(alignment: .leading) {
-                        Text(station.titles.primary)
-                            .font(.title2)
-                            .accessibilityLabel(station.titles.primary)
-        
-                        Text(station.synopses.short)
-                            .font(.footnote)
-                            .foregroundStyle(.gray)
-                            .accessibilityLabel(station.synopses.short)
-       
+                NavigationLink(destination: StationDetailView(station: station)) {
+                    HStack {
+                        CachedAsyncImage(url: URL(string: station.formattedImageURL))
+                        
+                        VStack(alignment: .leading) {
+                            Text(station.titles.primary)
+                                .font(.title2)
+                                .accessibilityLabel(station.titles.primary)
+            
+                            Text(station.synopses.short)
+                                .font(.footnote)
+                                .foregroundStyle(.gray)
+                                .accessibilityLabel(station.synopses.short)
+           
+                        }
                     }
                 }
             }

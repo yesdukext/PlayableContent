@@ -13,8 +13,10 @@ class AppCoordinator: ObservableObject {
     }
     
     func start() -> some View {
-        let repository = StationRepImpl(networkService: apiService)
-        let viewModel = StationsViewModel(repository: repository)
-        return StationsView(viewModel: viewModel)
+//        let repository = StationRepImpl(networkService: apiService)
+//        let viewModel = StationsViewModel(repository: repository)
+//        return StationsView(viewModel: viewModel)
+        return WelcomeView(apiService: apiService)
+        
     }
 }
