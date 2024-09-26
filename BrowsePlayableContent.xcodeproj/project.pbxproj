@@ -14,7 +14,18 @@
 		5C0307AE2C9F9C6A00BBE7D4 /* SMPUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307AD2C9F9C6A00BBE7D4 /* SMPUIView.swift */; };
 		5C0307B12C9FA47300BBE7D4 /* MyAvStatisticsConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307B02C9FA47300BBE7D4 /* MyAvStatisticsConsumer.swift */; };
 		5C0307B32C9FA4EA00BBE7D4 /* MediaSelectorAuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307B22C9FA4EA00BBE7D4 /* MediaSelectorAuthenticationProvider.swift */; };
-		5C0307B52C9FA8BC00BBE7D4 /* RMSAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307B42C9FA8BC00BBE7D4 /* RMSAuthenticator.swift */; };
+		5C0307B72CA1897100BBE7D4 /* JWTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307B62CA1897100BBE7D4 /* JWTResponse.swift */; };
+		5C0307C02CA1DA8400BBE7D4 /* RemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307BF2CA1DA8400BBE7D4 /* RemoteConfigService.swift */; };
+		5C0307C22CA1DAC200BBE7D4 /* ConfigureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307C12CA1DAC200BBE7D4 /* ConfigureResponse.swift */; };
+		5C0307C42CA1DB0E00BBE7D4 /* RemoteConfigRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307C32CA1DB0E00BBE7D4 /* RemoteConfigRepo.swift */; };
+		5C0307C62CA1DBB400BBE7D4 /* FetchRemoteConfigUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307C52CA1DBB400BBE7D4 /* FetchRemoteConfigUseCase.swift */; };
+		5C0307C82CA1DC4F00BBE7D4 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307C72CA1DC4F00BBE7D4 /* APIEndPoint.swift */; };
+		5C0307CC2CA1F9CE00BBE7D4 /* ConfigPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307CB2CA1F9CE00BBE7D4 /* ConfigPresenter.swift */; };
+		5C0307D12CA1FB2800BBE7D4 /* RemoteConfigErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307D02CA1FB2800BBE7D4 /* RemoteConfigErrorView.swift */; };
+		5C0307D32CA1FB8000BBE7D4 /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307D22CA1FB8000BBE7D4 /* ConfigView.swift */; };
+		5C0307D52CA1FBA600BBE7D4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307D42CA1FBA600BBE7D4 /* LoadingView.swift */; };
+		5C0307D72CA1FBC700BBE7D4 /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307D62CA1FBC700BBE7D4 /* InfoRowView.swift */; };
+		5C0307D92CA1FBEE00BBE7D4 /* KillSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0307D82CA1FBEE00BBE7D4 /* KillSwitchView.swift */; };
 		5C3391092C9C3D470026DF91 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3391082C9C3D470026DF91 /* WelcomeView.swift */; };
 		5C33910B2C9C3E640026DF91 /* RemoteConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33910A2C9C3E640026DF91 /* RemoteConfigView.swift */; };
 		5C33910D2C9C427E0026DF91 /* AppConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33910C2C9C427E0026DF91 /* AppConfigViewModel.swift */; };
@@ -63,7 +74,18 @@
 		5C0307AD2C9F9C6A00BBE7D4 /* SMPUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMPUIView.swift; sourceTree = "<group>"; };
 		5C0307B02C9FA47300BBE7D4 /* MyAvStatisticsConsumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvStatisticsConsumer.swift; sourceTree = "<group>"; };
 		5C0307B22C9FA4EA00BBE7D4 /* MediaSelectorAuthenticationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSelectorAuthenticationProvider.swift; sourceTree = "<group>"; };
-		5C0307B42C9FA8BC00BBE7D4 /* RMSAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSAuthenticator.swift; sourceTree = "<group>"; };
+		5C0307B62CA1897100BBE7D4 /* JWTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTResponse.swift; sourceTree = "<group>"; };
+		5C0307BF2CA1DA8400BBE7D4 /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
+		5C0307C12CA1DAC200BBE7D4 /* ConfigureResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureResponse.swift; sourceTree = "<group>"; };
+		5C0307C32CA1DB0E00BBE7D4 /* RemoteConfigRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigRepo.swift; sourceTree = "<group>"; };
+		5C0307C52CA1DBB400BBE7D4 /* FetchRemoteConfigUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRemoteConfigUseCase.swift; sourceTree = "<group>"; };
+		5C0307C72CA1DC4F00BBE7D4 /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		5C0307CB2CA1F9CE00BBE7D4 /* ConfigPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigPresenter.swift; sourceTree = "<group>"; };
+		5C0307D02CA1FB2800BBE7D4 /* RemoteConfigErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigErrorView.swift; sourceTree = "<group>"; };
+		5C0307D22CA1FB8000BBE7D4 /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		5C0307D42CA1FBA600BBE7D4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5C0307D62CA1FBC700BBE7D4 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
+		5C0307D82CA1FBEE00BBE7D4 /* KillSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillSwitchView.swift; sourceTree = "<group>"; };
 		5C3391082C9C3D470026DF91 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		5C33910A2C9C3E640026DF91 /* RemoteConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigView.swift; sourceTree = "<group>"; };
 		5C33910C2C9C427E0026DF91 /* AppConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigViewModel.swift; sourceTree = "<group>"; };
@@ -154,9 +176,56 @@
 			children = (
 				5C0307B02C9FA47300BBE7D4 /* MyAvStatisticsConsumer.swift */,
 				5C0307B22C9FA4EA00BBE7D4 /* MediaSelectorAuthenticationProvider.swift */,
-				5C0307B42C9FA8BC00BBE7D4 /* RMSAuthenticator.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5C0307BC2CA1D8C900BBE7D4 /* KillSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				5C33910A2C9C3E640026DF91 /* RemoteConfigView.swift */,
+			);
+			path = KillSwitch;
+			sourceTree = "<group>";
+		};
+		5C0307BD2CA1D90E00BBE7D4 /* SMP */ = {
+			isa = PBXGroup;
+			children = (
+				5C0307AB2C9F989000BBE7D4 /* SMPView.swift */,
+				5C0307AD2C9F9C6A00BBE7D4 /* SMPUIView.swift */,
+			);
+			path = SMP;
+			sourceTree = "<group>";
+		};
+		5C0307BE2CA1D94E00BBE7D4 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				5C38E8C82C8C67C1007DF383 /* ErrorView.swift */,
+				5C38E8B22C8B75B6007DF383 /* StationsView.swift */,
+				5C0307A92C9F92DE00BBE7D4 /* StationDetailView.swift */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		5C0307C92CA1F9A800BBE7D4 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				5C0307CA2CA1F9B900BBE7D4 /* Presenter */,
+				5C0307D02CA1FB2800BBE7D4 /* RemoteConfigErrorView.swift */,
+				5C0307D22CA1FB8000BBE7D4 /* ConfigView.swift */,
+				5C0307D42CA1FBA600BBE7D4 /* LoadingView.swift */,
+				5C0307D62CA1FBC700BBE7D4 /* InfoRowView.swift */,
+				5C0307D82CA1FBEE00BBE7D4 /* KillSwitchView.swift */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		5C0307CA2CA1F9B900BBE7D4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5C0307CB2CA1F9CE00BBE7D4 /* ConfigPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		5C38E86E2C89FC95007DF383 = {
@@ -226,6 +295,8 @@
 			children = (
 				5C38E8A82C89FE83007DF383 /* RadioMedia.swift */,
 				5C3391102C9C43370026DF91 /* AppConfig.swift */,
+				5C0307B62CA1897100BBE7D4 /* JWTResponse.swift */,
+				5C0307C12CA1DAC200BBE7D4 /* ConfigureResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +307,7 @@
 				5C38E8B02C8B7065007DF383 /* StationsViewModel.swift */,
 				5C38E8CA2C8C6A80007DF383 /* IdentifiableError.swift */,
 				5C33910C2C9C427E0026DF91 /* AppConfigViewModel.swift */,
+				5C0307C52CA1DBB400BBE7D4 /* FetchRemoteConfigUseCase.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -245,6 +317,7 @@
 			children = (
 				5C38E8BF2C8B9411007DF383 /* StationRepository.swift */,
 				5C33910E2C9C42C80026DF91 /* ConfigRepositoryImpl.swift */,
+				5C0307C32CA1DB0E00BBE7D4 /* RemoteConfigRepo.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -252,16 +325,14 @@
 		5C38E8A72C89FCC7007DF383 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5C0307C92CA1F9A800BBE7D4 /* RemoteConfig */,
+				5C0307BE2CA1D94E00BBE7D4 /* Stations */,
+				5C0307BD2CA1D90E00BBE7D4 /* SMP */,
+				5C0307BC2CA1D8C900BBE7D4 /* KillSwitch */,
 				5C38E8C52C8C5829007DF383 /* ImageView */,
 				5C38E8B42C8B7CB7007DF383 /* Coordinator */,
 				5C38E87A2C89FC95007DF383 /* BrowsePlayableContentApp.swift */,
-				5C0307A92C9F92DE00BBE7D4 /* StationDetailView.swift */,
-				5C38E8B22C8B75B6007DF383 /* StationsView.swift */,
-				5C38E8C82C8C67C1007DF383 /* ErrorView.swift */,
 				5C3391082C9C3D470026DF91 /* WelcomeView.swift */,
-				5C33910A2C9C3E640026DF91 /* RemoteConfigView.swift */,
-				5C0307AB2C9F989000BBE7D4 /* SMPView.swift */,
-				5C0307AD2C9F9C6A00BBE7D4 /* SMPUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +350,8 @@
 			isa = PBXGroup;
 			children = (
 				5C38E8BD2C8B9274007DF383 /* NetworkService.swift */,
+				5C0307BF2CA1DA8400BBE7D4 /* RemoteConfigService.swift */,
+				5C0307C72CA1DC4F00BBE7D4 /* APIEndPoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -531,15 +604,25 @@
 			files = (
 				5C38E8BE2C8B9274007DF383 /* NetworkService.swift in Sources */,
 				5C0307AC2C9F989000BBE7D4 /* SMPView.swift in Sources */,
+				5C0307CC2CA1F9CE00BBE7D4 /* ConfigPresenter.swift in Sources */,
+				5C0307C62CA1DBB400BBE7D4 /* FetchRemoteConfigUseCase.swift in Sources */,
 				5C3391112C9C43370026DF91 /* AppConfig.swift in Sources */,
+				5C0307D12CA1FB2800BBE7D4 /* RemoteConfigErrorView.swift in Sources */,
+				5C0307D32CA1FB8000BBE7D4 /* ConfigView.swift in Sources */,
+				5C0307C22CA1DAC200BBE7D4 /* ConfigureResponse.swift in Sources */,
 				5C33910F2C9C42C90026DF91 /* ConfigRepositoryImpl.swift in Sources */,
 				5C3391092C9C3D470026DF91 /* WelcomeView.swift in Sources */,
 				5C38E8A92C89FE83007DF383 /* RadioMedia.swift in Sources */,
-				5C0307B52C9FA8BC00BBE7D4 /* RMSAuthenticator.swift in Sources */,
+				5C0307D72CA1FBC700BBE7D4 /* InfoRowView.swift in Sources */,
 				5C38E8C22C8B9F03007DF383 /* Coordinator.swift in Sources */,
 				5C0307B12C9FA47300BBE7D4 /* MyAvStatisticsConsumer.swift in Sources */,
 				5C0307AE2C9F9C6A00BBE7D4 /* SMPUIView.swift in Sources */,
 				5C38E8C02C8B9411007DF383 /* StationRepository.swift in Sources */,
+				5C0307B72CA1897100BBE7D4 /* JWTResponse.swift in Sources */,
+				5C0307C42CA1DB0E00BBE7D4 /* RemoteConfigRepo.swift in Sources */,
+				5C0307D92CA1FBEE00BBE7D4 /* KillSwitchView.swift in Sources */,
+				5C0307C82CA1DC4F00BBE7D4 /* APIEndPoint.swift in Sources */,
+				5C0307C02CA1DA8400BBE7D4 /* RemoteConfigService.swift in Sources */,
 				5C38E8B32C8B75B6007DF383 /* StationsView.swift in Sources */,
 				5C0307AA2C9F92DE00BBE7D4 /* StationDetailView.swift in Sources */,
 				5C38E8CB2C8C6A80007DF383 /* IdentifiableError.swift in Sources */,
@@ -550,6 +633,7 @@
 				5C38E8B62C8B7CD0007DF383 /* AppCoordinator.swift in Sources */,
 				5C38E8B12C8B7065007DF383 /* StationsViewModel.swift in Sources */,
 				5C38E8C72C8C5840007DF383 /* CachedAsyncImage.swift in Sources */,
+				5C0307D52CA1FBA600BBE7D4 /* LoadingView.swift in Sources */,
 				5C38E87B2C89FC95007DF383 /* BrowsePlayableContentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -726,7 +810,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -758,7 +842,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

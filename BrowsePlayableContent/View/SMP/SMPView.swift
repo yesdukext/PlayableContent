@@ -6,7 +6,10 @@
 //
 
 import SwiftUI
+import SMP
 
+
+import SwiftUI
 struct SMPView: UIViewRepresentable {
     
     var smpVideoView: UIView?

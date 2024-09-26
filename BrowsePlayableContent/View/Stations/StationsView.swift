@@ -1,6 +1,6 @@
-//
-//  Created by Yves Dukuze on 06/09/2024.
-//
+
+// Created by Yves Dukuze on 06/09/2024.
+
 
 import SwiftUI
 import Combine
@@ -11,7 +11,7 @@ struct StationsView: View {
     var body: some View {
         NavigationView {
             List(viewModel.stations, id: \.id) { station in
-                NavigationLink(destination: StationDetailView(station: station)) {
+                NavigationLink(destination: StationDetailView(station: station, viewModel: viewModel)) {
                     HStack {
                         CachedAsyncImage(url: URL(string: station.formattedImageURL))
                         
@@ -29,7 +29,7 @@ struct StationsView: View {
                     }
                 }
             }
-            .navigationTitle("BBC playable content")
+            .navigationTitle("BBC playable content").accessibility(hidden: true)
             .sheet(item: $viewModel.error) { error in
                 ErrorView(message: error.message, onDismiss: {viewModel.error = nil})
             }

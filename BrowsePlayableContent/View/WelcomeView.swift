@@ -22,6 +22,13 @@ struct WelcomeView: View {
         TabView {
             let repository = StationRepImpl(networkService: apiService)
             let viewModel = StationsViewModel(repository: repository)
+            
+            let networkService = RemoteConfigNetworkServiceImpl()
+            let remoteConfigRepository = RemoteConfigRepositoryImpl(networkService: networkService)
+            let fetchConfigUseCase = FetchConfigUseCaseImpl(repository: remoteConfigRepository)
+            let present = ConfigPresenterImpl(fetchConfigUseCase: fetchConfigUseCase)
+            
+            
             StationsView(viewModel: viewModel)
                 .tabItem {
                     Label("Station", systemImage: "play.circle")
@@ -34,7 +41,8 @@ struct WelcomeView: View {
                 }
   
             
-            Text("Remote Config")
+//            Text("Remote Config")
+            ConfigView(presenter: present)
                 .tabItem {
                     Label("Config", systemImage: "wrench.and.screwdriver.fill")
                 }

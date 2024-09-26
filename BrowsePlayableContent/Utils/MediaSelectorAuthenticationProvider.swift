@@ -6,7 +6,6 @@
 //
 
 import SMP
-import Combine
 
 public class MediaSelectorAuthenticationProvider: NSObject, BBCMediaSelectorAuthenticationProvider {
     

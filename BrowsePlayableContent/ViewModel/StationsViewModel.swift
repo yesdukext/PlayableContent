@@ -30,4 +30,23 @@ final class StationsViewModel: ObservableObject {
             })
             .store(in: &cancellable)
     }
+    
+    func fetchJWT(for serviceId: String, completion: @escaping (Result<String, Error>) -> Void) {
+        let urlString = "https://rms.api.bbc.co.uk/v2/sign/token/\(serviceId)"
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+          
+            guard let data = data,
+                  let tokenResponse = try? JSONDecoder().decode(JWTResponse.self, from: data) else {
+                completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Failed to decode token response"])))
+                return
+            }
+            completion(.success(tokenResponse.token))
+        }.resume()
+    }
 }
